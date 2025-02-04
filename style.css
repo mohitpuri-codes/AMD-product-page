@@ -54,6 +54,37 @@ a {
   gap: 50px;
 }
 
+ul.left-nav__links li {
+  list-style: none;
+  position: relative;
+  display: inline;
+}
+
+ul.left-nav__links li a {
+  color: white;
+  text-decoration: none;
+}
+
+ul.left-nav__links li:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  width: 0px;
+  height: 2px;
+  background: #ffffff;
+  transition: all 0.45s;
+}
+
+ul.left-nav__links li:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+ul.left-nav__links li a:hover {
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 1200px) {
   .hamburger-menu {
     display: flex;
