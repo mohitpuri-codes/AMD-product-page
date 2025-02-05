@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: Open Sans, arial, sans-serif;
 }
+body {
+  background-color: #000000;
+}
 
 header {
   background-color: #000000;
@@ -259,4 +262,175 @@ ul.left-nav__links li a:hover {
   p.subtitle {
     font-size: 14px;
   }
+}
+
+/* anchor bar */
+
+.anchor-bar {
+  background-color: black;
+  color: #bababa;
+  padding: 20px 10px;
+  margin-top: -4px;
+  position: sticky;
+  z-index: 1000000;
+  top: 0;
+}
+
+.anchor-bar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.detail-summary {
+  display: none;
+}
+
+ul.anchor-bar-links li {
+  list-style: none;
+  position: relative;
+  display: inline;
+}
+
+ul.anchor-bar-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+ul.anchor-bar-links li:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -19px;
+  width: 0px;
+  height: 2px;
+  background: #ffffff;
+  transition: all 0.45s;
+}
+
+ul.anchor-bar-links li:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+ul.anchor-bar-links li a:hover {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .detail-summary {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .anchor-bar ul {
+    display: none;
+  }
+}
+
+/* amd intro */
+
+.amd-intro {
+  background: url("https://www.amd.com/content/dam/amd/en/images/backgrounds/abstract/2867050-business-glow.jpg")
+    no-repeat;
+  color: white;
+  padding: 40px;
+}
+
+.intro-detail img {
+  width: 500px;
+}
+
+.intro-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 180px 0;
+  gap: 100px;
+}
+
+.intro-detail__summary {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.intro-detail__summary li {
+  list-style: disc;
+  margin-left: 35px;
+  line-height: 22px;
+}
+
+.intro-detail__summary button {
+  padding: 20px 40px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  width: fit-content;
+}
+
+@media only screen and (min-width: 1441px) {
+  .intro-detail__summary h1 {
+    width: 30ch;
+  }
+
+  .intro-detail__summary {
+    width: 60ch;
+  }
+
+  .intro-detail__summary li {
+    width: 70ch;
+  }
+
+  .intro-detail__summary p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .intro-detail img {
+    max-width: 500px;
+    width: 100%;
+  }
+  .intro-detail__summary {
+    width: 70ch;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .intro-detail {
+    gap: 30px;
+    /* justify-content: flex-start; */
+  }
+  .intro-detail img {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .intro-detail img {
+    width: 200px;
+  }
+  .intro-detail__summary {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .intro-detail {
+    flex-direction: column;
+  }
+  .intro-detail__summary {
+    width: auto;
+  }
+  .intro-detail img {
+    width: 100%;
+    max-width: 700px;
+  }
+  .amd-intro {
+    object-position: 61% center;
+  }
+}
+
+@media only screen and (max-width: 750px) {
 }
