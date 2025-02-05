@@ -123,3 +123,147 @@ ul.left-nav__links li a:hover {
     gap: 20px;
   }
 }
+
+/* main banner */
+
+.main-banner-wrapper {
+  position: relative;
+}
+
+.main-banner {
+  padding-left: 12rem;
+  /* padding-right: 5.635rem; */
+  padding-top: 14px;
+  position: absolute;
+  top: 0;
+}
+
+.main-banner-img {
+  width: 100%;
+  height: 391px;
+  object-fit: cover;
+  z-index: -100;
+  text-align: center;
+  object-position: center;
+}
+
+.main-banner svg {
+  width: 14px;
+}
+
+.main-banner-navigate {
+  display: flex;
+  align-items: center;
+  color: #606164;
+  font-size: 12px;
+  gap: 10px;
+}
+
+.main-banner__details {
+  color: white;
+  font-size: large;
+  padding-left: 5rem;
+  margin-top: 100px;
+
+  padding-bottom: 500px;
+}
+
+.main-banner__details p {
+  width: 53.45ch;
+  margin-top: 25px;
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 1580px) {
+  .main-banner {
+    padding-left: 10rem;
+    /* padding-right: 4.635rem; */
+  }
+  .main-banner__details {
+    width: 70ch;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .main-banner {
+    padding-left: 7rem;
+    /* padding-right: 4.635rem; */
+  }
+  .main-banner__details {
+    width: 55ch;
+    margin-top: 50px;
+  }
+  .main-banner__details p {
+    width: 30ch;
+  }
+}
+@media only screen and (max-width: 1099px) {
+  .main-banner {
+    padding-left: 7rem;
+    /* padding-right: 4.635rem; */
+  }
+  .main-banner__details {
+    width: 55ch;
+    margin-top: 50px;
+    padding-left: 0;
+  }
+  .main-banner__details p {
+    width: 50ch;
+  }
+}
+@media only screen and (max-width: 952px) {
+  .main-banner {
+    padding-left: 3.265rem;
+    /* padding-right: 4.635rem; */
+  }
+  .main-banner__details {
+    width: 55ch;
+    margin-top: 50px;
+    padding-left: 0;
+  }
+  .main-banner__details p {
+    width: 50ch;
+  }
+}
+@media only screen and (max-width: 752px) {
+  .main-banner {
+    padding-left: 1.265rem;
+    /* padding-right: 4.635rem; */
+  }
+  .main-banner__details {
+    width: 55ch;
+    margin-top: 10px;
+    padding-left: 0;
+  }
+  .main-banner__details p {
+    width: 35ch;
+  }
+}
+@media only screen and (max-width: 552px) {
+  .main-banner {
+    padding-left: 0.7rem;
+    /* padding-right: 4.635rem; */
+  }
+  .main-banner__details {
+    width: 55ch;
+    padding-bottom: 0;
+    font-size: 14px;
+    margin-top: 200px;
+    padding-left: 0;
+  }
+  .main-banner__details p {
+    width: 35ch;
+    font-size: 14px;
+  }
+  .main-banner-img {
+    object-position: 61% center;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .main-banner__details {
+    font-size: 10px;
+  }
+  p.subtitle {
+    font-size: 14px;
+  }
+}
