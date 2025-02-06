@@ -964,3 +964,61 @@ ul.gpu-lists li a:hover {
 section h1 {
   font-size: 30px;
 }
+
+/* featured section */
+
+.laptops {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.featured-laptop {
+  width: fit-content;
+  background-color: #151516;
+  max-width: 800px;
+  padding: 10px 0 40px 0;
+}
+
+.laptops img {
+  max-width: 350px;
+  width: 100%;
+  text-align: center;
+}
+
+.laptop-details {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.featured-title {
+  margin: 150px 0 40px 0 !important;
+}
+
+.featured-subtitle {
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+.laptop-details h3 {
+  margin-bottom: 20px;
+}
+
+.laptop-details a {
+  color: #2899ff;
+}
+
+.resources a:hover,
+.laptops a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 550px) {
+  .laptops {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
