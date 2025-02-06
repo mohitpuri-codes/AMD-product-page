@@ -626,6 +626,15 @@ ul.anchor-bar-links li a:hover {
 .paras a {
   color: #2899ff;
 }
+.paras a:hover {
+  color: #2899ff;
+  text-decoration: underline;
+}
+
+a:focus,
+button:focus {
+  outline: 1px solid blue;
+}
 
 @media only screen and (max-width: 760px) {
   .features-grid {
