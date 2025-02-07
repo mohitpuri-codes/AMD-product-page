@@ -1160,3 +1160,7 @@ td:nth-child(1):hover {
     display: none;
   }
 }
+
+.laptop-details h3 a {
+  color: white;
+}
